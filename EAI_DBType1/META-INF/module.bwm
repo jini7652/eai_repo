@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sca:composite xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:BW="http://xsd.tns.tibco.com/amf/models/sca/implementationtype/BW" xmlns:XMLSchema="http://www.w3.org/2001/XMLSchema" xmlns:compositeext="http://schemas.tibco.com/amx/3.0/compositeext" xmlns:sca="http://www.osoa.org/xmlns/sca/1.0" xmlns:scaext="http://xsd.tns.tibco.com/amf/models/sca/extensions" xmi:id="_cnzYcFxHEeuLpuk1OyPEuw" targetNamespace="http://tns.tibco.com/bw/composite/EAI_DBType1" name="EAI_DBType1" compositeext:version="1.0.0" compositeext:formatVersion="2">
+  <sca:property xmi:id="_cs2QgFxHEeuLpuk1OyPEuw" name="BW.DEPLOYMENTUNIT.TYPE" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_cs-zYFxHEeuLpuk1OyPEuw" name="BW.APPNODE.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_ctAokFxHEeuLpuk1OyPEuw" name="BW.DEPLOYMENTUNIT.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_ctB2sFxHEeuLpuk1OyPEuw" name="BW.HOST.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_ctDr4FxHEeuLpuk1OyPEuw" name="BW.DOMAIN.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_ctFhEFxHEeuLpuk1OyPEuw" name="BW.DEPLOYMENTUNIT.VERSION" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_ctGvMFxHEeuLpuk1OyPEuw" name="BW.APPSPACE.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_ctH9UFxHEeuLpuk1OyPEuw" name="BW.MODULE.VERSION" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_ctJygFxHEeuLpuk1OyPEuw" name="BW.MODULE.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:component xmi:id="_ysN_8FxJEeuLpuk1OyPEuw" name="ComponentOMS_OM2WM01_PACK_WMS" compositeext:version="1.0.0.qualifier">
+    <scaext:implementation xsi:type="BW:BWComponentImplementation" xmi:id="_ysN_8VxJEeuLpuk1OyPEuw" processName="com.fnf.eai.oms.wms.mq.OMS_OM2WM01_PACK_WMS"/>
+  </sca:component>
+  <sca:component xmi:id="_szD3YFxNEeuLpuk1OyPEuw" name="ComponentDB2DBTemplate" compositeext:version="1.0.0.qualifier">
+    <scaext:implementation xsi:type="BW:BWComponentImplementation" xmi:id="_szD3YVxNEeuLpuk1OyPEuw" processName="com.fnf.eai.template.DB2DBTemplate"/>
+  </sca:component>
+  <sca:component xmi:id="_Z0uy4FxSEeuLpuk1OyPEuw" name="ComponentDB2MQTemplate" compositeext:version="1.0.0.qualifier">
+    <scaext:implementation xsi:type="BW:BWComponentImplementation" xmi:id="_Z0uy4VxSEeuLpuk1OyPEuw" processName="com.fnf.eai.template.DB2MQType1Template"/>
+  </sca:component>
+  <sca:component xmi:id="_qryPkFxSEeuLpuk1OyPEuw" name="ComponentMQ2DBTemplate" compositeext:version="1.0.0.qualifier">
+    <scaext:implementation xsi:type="BW:BWComponentImplementation" xmi:id="_qryPkVxSEeuLpuk1OyPEuw" processName="com.fnf.eai.template.MQ2DBType1Template"/>
+  </sca:component>
+  <sca:component xmi:id="_Cre7MFxZEeuLpuk1OyPEuw" name="ComponentOfDB2MQ_Type2Template" compositeext:version="1.0.0.qualifier">
+    <scaext:implementation xsi:type="BW:BWComponentImplementation" xmi:id="_Cre7MVxZEeuLpuk1OyPEuw" processName="com.fnf.eai.template.DB2MQType2Template"/>
+  </sca:component>
+  <sca:component xmi:id="_SXEbkFxfEeuLpuk1OyPEuw" name="ComponentDB2MQType3Template" compositeext:version="1.0.0.qualifier">
+    <scaext:implementation xsi:type="BW:BWComponentImplementation" xmi:id="_SXEbkVxfEeuLpuk1OyPEuw" processName="com.fnf.eai.template.DB2MQType3Template"/>
+  </sca:component>
+</sca:composite>

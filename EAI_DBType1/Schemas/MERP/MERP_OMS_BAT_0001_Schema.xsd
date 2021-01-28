@@ -1,0 +1,341 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.example.org/MQXMLSchema" xmlns:tns="http://www.example.org/MQXMLSchema" elementFormDefault="qualified">
+
+    <element name="ItemList">
+    	<complexType>
+    		<sequence>
+    			<element name="Item">
+    				<complexType>
+    					<sequence>
+    						<element name="PrimaryInformation">
+    							<complexType>
+    								<attribute name="Description"
+    									use="required">
+    									<simpleType>
+    										<restriction
+    											base="string">
+    											<maxLength
+    												value="500">
+    											</maxLength>
+    										</restriction>
+    									</simpleType>
+    								</attribute>
+    								<attribute name="ProductLine"
+    									use="required">
+    									<simpleType>
+    										<restriction
+    											base="string">
+    											<maxLength
+    												value="100">
+    											</maxLength>
+    										</restriction>
+    									</simpleType>
+    								</attribute>
+    							</complexType>
+    						</element>
+    						<element name="Extn">
+    							<complexType>
+
+    								<attribute name="Brand"
+    									use="required">
+    									<simpleType>
+    										<restriction
+    											base="string">
+    											<maxLength value="2"></maxLength>
+    										</restriction>
+    									</simpleType>
+    								</attribute>
+    								<attribute name="YearCode"
+    									use="required">
+    									<simpleType>
+    										<restriction
+    											base="string">
+    											<maxLength value="4"></maxLength>
+    										</restriction>
+    									</simpleType>
+    								</attribute>
+    								<attribute name="YearValue"
+    									use="required">
+    									<simpleType>
+    										<restriction
+    											base="string">
+    											<maxLength value="4"></maxLength>
+    										</restriction>
+    									</simpleType>
+    								</attribute>
+    								<attribute name="SeasonCode"
+    									use="required">
+    									<simpleType>
+    										<restriction
+    											base="string">
+    											<maxLength value="1"></maxLength>
+    										</restriction>
+    									</simpleType>
+    								</attribute>
+    								<attribute name="YearSeasonCode"
+    									use="required">
+    									<simpleType>
+    										<restriction
+    											base="string">
+    											<maxLength value="3"></maxLength>
+    										</restriction>
+    									</simpleType>
+    								</attribute>
+    								<attribute name="ClassHCode"
+    									use="required">
+    									<simpleType>
+    										<restriction
+    											base="string">
+    											<maxLength value="10"></maxLength>
+    										</restriction>
+    									</simpleType>
+    								</attribute>
+    								<attribute name="ClassMCode"
+    									use="required">
+    									<simpleType>
+    										<restriction
+    											base="string">
+    											<maxLength value="10"></maxLength>
+    										</restriction>
+    									</simpleType>
+    								</attribute>
+    								<attribute name="ClassLCode"
+    									use="required">
+    									<simpleType>
+    										<restriction
+    											base="string">
+    											<maxLength value="10"></maxLength>
+    										</restriction>
+    									</simpleType>
+    								</attribute>
+    								<attribute name="GenderCode"
+    									use="optional">
+    									<simpleType>
+    										<restriction
+    											base="string">
+    											<maxLength value="1"></maxLength>
+    										</restriction>
+    									</simpleType>
+    								</attribute>
+    								<attribute name="TopBottom"
+    									use="optional">
+    									<simpleType>
+    										<restriction
+    											base="string">
+    											<maxLength value="1"></maxLength>
+    										</restriction>
+    									</simpleType>
+    								</attribute>
+    								<attribute name="NonSeason"
+    									use="optional">
+    									<simpleType>
+    										<restriction
+    											base="string">
+    											<maxLength value="1"></maxLength>
+    										</restriction>
+    									</simpleType>
+    								</attribute>
+    								<attribute name="FiberContents"
+    									use="optional">
+    									<simpleType>
+    										<restriction
+    											base="string">
+    											<maxLength
+    												value="100">
+    											</maxLength>
+    										</restriction>
+    									</simpleType>
+    								</attribute>
+    								<attribute name="FiberName"
+    									use="optional">
+    									<simpleType>
+    										<restriction
+    											base="string">
+    											<maxLength
+    												value="100">
+    											</maxLength>
+    										</restriction>
+    									</simpleType>
+    								</attribute>
+    								<attribute name="DomainCode1"
+    									use="optional">
+    									<simpleType>
+    										<restriction
+    											base="string">
+    											<maxLength
+    												value="100">
+    											</maxLength>
+    										</restriction>
+    									</simpleType>
+    								</attribute>
+    								<attribute name="DomainCode2"
+    									use="optional">
+    									<simpleType>
+    										<restriction
+    											base="string">
+    											<maxLength
+    												value="100">
+    											</maxLength>
+    										</restriction>
+    									</simpleType>
+    								</attribute>
+    								<attribute name="DomainCode3"
+    									use="optional">
+    									<simpleType>
+    										<restriction
+    											base="string">
+    											<maxLength
+    												value="100">
+    											</maxLength>
+    										</restriction>
+    									</simpleType>
+    								</attribute>
+    								<attribute name="ItemDetailNo"
+    									use="optional">
+    									<simpleType>
+    										<restriction
+    											base="string">
+    											<maxLength value="5"></maxLength>
+    										</restriction>
+    									</simpleType>
+    								</attribute>
+    								<attribute name="MaterialTypeCode"
+    									use="optional">
+    									<simpleType>
+    										<restriction
+    											base="string">
+    											<maxLength
+    												value="100">
+    											</maxLength>
+    										</restriction>
+    									</simpleType>
+    								</attribute>
+    								<attribute name="RepresentativeCode"
+    									use="optional">
+    									<simpleType>
+    										<restriction
+    											base="string">
+    											<maxLength value="9"></maxLength>
+    										</restriction>
+    									</simpleType>
+    								</attribute>
+    								<attribute name="FamilyProductNo"
+    									use="optional">
+    									<simpleType>
+    										<restriction
+    											base="string">
+    											<maxLength value="14"></maxLength>
+    										</restriction>
+    									</simpleType>
+    								</attribute>
+    								<attribute name="SetProductNo1"
+    									use="optional">
+    									<simpleType>
+    										<restriction
+    											base="string">
+    											<maxLength value="20"></maxLength>
+    										</restriction>
+    									</simpleType>
+    								</attribute>
+    								<attribute name="SetProductNo2"
+    									use="optional">
+    									<simpleType>
+    										<restriction
+    											base="string">
+    											<maxLength value="20"></maxLength>
+    										</restriction>
+    									</simpleType>
+    								</attribute>
+    								<attribute name="ProductAttribute1"
+    									use="optional">
+    									<simpleType>
+    										<restriction
+    											base="string">
+    											<maxLength value="10"></maxLength>
+    										</restriction>
+    									</simpleType>
+    								</attribute>
+    								<attribute name="ProductAttribute2"
+    									use="optional">
+    									<simpleType>
+    										<restriction
+    											base="string">
+    											<maxLength value="10"></maxLength>
+    										</restriction>
+    									</simpleType>
+    								</attribute>
+    								<attribute name="ProductAttribute3"
+    									use="optional">
+    									<simpleType>
+    										<restriction
+    											base="string">
+    											<maxLength value="10"></maxLength>
+    										</restriction>
+    									</simpleType>
+    								</attribute>
+    								<attribute name="ProductAttribute4"
+    									use="optional">
+    									<simpleType>
+    										<restriction
+    											base="string">
+    											<maxLength value="10"></maxLength>
+    										</restriction>
+    									</simpleType>
+    								</attribute>
+    								<attribute name="ProductAttribute5"
+    									use="optional">
+    									<simpleType>
+    										<restriction
+    											base="string">
+    											<maxLength value="10"></maxLength>
+    										</restriction>
+    									</simpleType>
+    								</attribute>
+    								<attribute name="ProductAttribute6"
+    									use="optional">
+    									<simpleType>
+    										<restriction
+    											base="string">
+    											<maxLength value="10"></maxLength>
+    										</restriction>
+    									</simpleType>
+    								</attribute>
+    								<attribute name="IsModelItem"
+    									type="string" use="required">
+    								</attribute>
+    							</complexType></element>
+    					</sequence>
+    					<attribute name="Action" use="required">
+    						<simpleType>
+    							<restriction base="string">
+    								<maxLength value="24"></maxLength>
+    							</restriction>
+    						</simpleType>
+    					</attribute>
+    					<attribute name="ItemID" use="required">
+    						<simpleType>
+    							<restriction base="string">
+    								<maxLength value="40"></maxLength>
+    							</restriction>
+    						</simpleType>
+    					</attribute>
+    					<attribute name="OrganizationCode"
+    						use="required">
+    						<simpleType>
+    							<restriction base="string">
+    								<maxLength value="24"></maxLength>
+    							</restriction>
+    						</simpleType>
+    					</attribute>
+    					<attribute name="UnitOfMeasure"
+    						use="required">
+    						<simpleType>
+    							<restriction base="string">
+    								<maxLength value="40"></maxLength>
+    							</restriction>
+    						</simpleType>
+    					</attribute>
+    				</complexType></element>
+    		</sequence>
+    	</complexType></element>
+</schema>

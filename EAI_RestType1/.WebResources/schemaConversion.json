@@ -1,0 +1,77 @@
+{"records": [
+    {
+        "jsonSchemaLocation": "/EAI_RestType1/Service Descriptors/com.fnf.eai.posa.hero.dbcall.POSA_HERO_ONL_0005-POSA_HERO_ONL_0005.json",
+        "conversionType": "linked",
+        "xsdSchemaTargetNamespace": "http://www.example.org/POSA_HERO_ONL_0005_Request"
+    },
+    {
+        "jsonSchemaLocation": "/EAI_RestType1/Service Descriptors/com.fnf.eai.posa.hero.dbcall.POSA_HERO_ONL_0005-POSA_HERO_ONL_0005.json",
+        "conversionType": "linked",
+        "xsdSchemaTargetNamespace": "http://www.example.org/POSA_HERO_ONL_0005_Response"
+    },
+    {
+        "jsonSchemaLocation": "/EAI_RestType1/Service Descriptors/com.fnf.eai.posp.hero.dbcall.POSP_HERO_ONL_0017-POSP_HERO_ONL_0017.json",
+        "conversionType": "linked",
+        "xsdSchemaTargetNamespace": "http://www.example.org/POSP_HERO_ONL_0017_Request"
+    },
+    {
+        "jsonSchemaLocation": "/EAI_RestType1/Service Descriptors/com.fnf.eai.posp.hero.dbcall.POSP_HERO_ONL_0017-POSP_HERO_ONL_0017.json",
+        "conversionType": "linked",
+        "xsdSchemaTargetNamespace": "http://www.example.org/POSP_HERO_ONL_0017_Response"
+    },
+    {
+        "jsonSchemaLocation": "/EAI_RestType1/Service Descriptors/com.fnf.eai.posp.hero.dbcall.POSP_HERO_ONL_0018-POSP_HERO_ONL_0018.json",
+        "conversionType": "linked",
+        "xsdSchemaTargetNamespace": "http://www.example.org/POSP_HERO_ONL_0018_Request"
+    },
+    {
+        "jsonSchemaLocation": "/EAI_RestType1/Service Descriptors/com.fnf.eai.posp.hero.dbcall.POSP_HERO_ONL_0018-POSP_HERO_ONL_0018.json",
+        "conversionType": "linked",
+        "xsdSchemaTargetNamespace": "http://www.example.org/POSP_HERO_ONL_0018_Response"
+    },
+    {
+        "jsonSchemaLocation": "/EAI_RestType1/Service Descriptors/com.fnf.eai.posp.hero.dbcall.POSP_HERO_ONL_0020-POSP_HERO_ONL_0020.json",
+        "conversionType": "linked",
+        "xsdSchemaTargetNamespace": "http://www.example.org/POSP_HERO_ONL_0020_Request"
+    },
+    {
+        "jsonSchemaLocation": "/EAI_RestType1/Service Descriptors/com.fnf.eai.posp.hero.dbcall.POSP_HERO_ONL_0020-POSP_HERO_ONL_0020.json",
+        "conversionType": "linked",
+        "xsdSchemaTargetNamespace": "http://www.example.org/POSP_HERO_ONL_0020_Response"
+    },
+    {
+        "jsonSchemaLocation": "/EAI_RestType1/Service Descriptors/com.fnf.eai.posp.hero.dbcall.POSP_HERO_ONL_0025-POSP_HERO_ONL_0025.json",
+        "conversionType": "linked",
+        "xsdSchemaTargetNamespace": "http://www.example.org/POSP_HERO_ONL_0025_Request"
+    },
+    {
+        "jsonSchemaLocation": "/EAI_RestType1/Service Descriptors/com.fnf.eai.posp.hero.dbcall.POSP_HERO_ONL_0025-POSP_HERO_ONL_0025.json",
+        "conversionType": "linked",
+        "xsdSchemaTargetNamespace": "http://www.example.org/POSP_HERO_ONL_0025_Response"
+    },
+    {
+        "jsonSchemaLocation": "/EAI_RestType1/Service Descriptors/com.fnf.eai.posp.hero.dbcall.POSP_HERO_ONL_0014-POSP_HERO_ONL_0014.json",
+        "conversionType": "linked",
+        "xsdSchemaTargetNamespace": "http://www.example.org/POSP_HERO_ONL_0014_Request"
+    },
+    {
+        "jsonSchemaLocation": "/EAI_RestType1/Service Descriptors/com.fnf.eai.posp.hero.dbcall.POSP_HERO_ONL_0014-POSP_HERO_ONL_0014.json",
+        "conversionType": "linked",
+        "xsdSchemaTargetNamespace": "http://www.example.org/POSP_HERO_ONL_0014_Response"
+    },
+    {
+        "jsonSchemaLocation": "/EAI_RestType1/Service Descriptors/com.fnf.eai.posp.hero.db.POSP_HERO_ONL_0022-POSP_HERO_ONL_0022.json",
+        "conversionType": "linked",
+        "xsdSchemaTargetNamespace": "http://www.example.org/POSP_HERO_ONL_0022_Request"
+    },
+    {
+        "jsonSchemaLocation": "/EAI_RestType1/Service Descriptors/com.fnf.eai.posp.hero.db.POSP_HERO_ONL_0022-POSP_HERO_ONL_0022.json",
+        "conversionType": "linked",
+        "xsdSchemaTargetNamespace": "http://www.example.org/POSP_HERO_ONL_0022_Response"
+    },
+    {
+        "jsonSchemaLocation": "/EAI_RestType1/Service Descriptors/com.fnf.eai.boa.hero.db.BOA_HERO_ONL_0004-BOA_HERO_ONL_0004.json",
+        "conversionType": "linked",
+        "xsdSchemaTargetNamespace": "http://www.example.org/BOA_HERO_ONL_0004_Request"
+    }
+]}

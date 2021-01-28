@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jndi:namedResource xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:jms="http://xsd.tns.tibco.com/bw/models/sharedresource/jms" xmlns:jndi="http://xsd.tns.tibco.com/amf/models/sharedresource/jndi" xmi:id="_QZJ9UFqyEeuCRO828n310A" name="com.fnf.eai.resources.jms.oms.JMSConnectionResource" type="jms:JMSConnectionFactory">
+  <jndi:reference xmi:id="_QZR5IFqyEeuCRO828n310A" key="jndiConnectionJNDIName" type="jms:JNDIConnection" value="com.fnf.eai.resources.jms.oms.JNDI_OMS"/>
+  <jndi:configuration xsi:type="jms:JNDIConnectionFactory" xmi:id="_QZR5IVqyEeuCRO828n310A" jndiName="AGENT_QCF"/>
+</jndi:namedResource>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jndi:namedResource xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:jdbc="http://xsd.tns.tibco.com/amf/models/sharedresource/jdbc" xmlns:jndi="http://xsd.tns.tibco.com/amf/models/sharedresource/jndi" xmlns:subject="http://xsd.tns.tibco.com/trinity/models/identity/subject" xmi:id="_O9KkcFDCEeujkcWfXO7YSA" name="com.fnf.eai.resources.db.heroku.JDBC_HEROKU_PRD" type="jdbc:JdbcDataSource">
+  <jndi:reference xmi:id="_O-faIFDCEeujkcWfXO7YSA" key="subjectJndiName" type="subject:SubjectConfiguration" value=""/>
+  <jndi:configuration xsi:type="jdbc:JdbcDataSource" xmi:id="_O-faIVDCEeujkcWfXO7YSA" username="u93frm2h98hceb" password="#!qSW8tV4e4BGeIPqGH7Mobli5WG4dgWIqAlE6kfp2XPFLNWy5ZurjUf3p5IS9SXY46OBPyiaQRC1vcVyZ48SlgmoGe4s9asuvNiOoHW6UW/ER3n9oX2LwC3cGDKNFwDiUBFeuTlw7qPHyL6oJq91N8pqFS34h7xwWsZ8rkAG9zSCy98lIsYqhZnvHUx1rwQ6y">
+    <connectionConfig xsi:type="jdbc:NonXaConnection" xmi:id="_O-faIlDCEeujkcWfXO7YSA" jdbcDriver="org.postgresql.Driver" dbURL="jdbc:postgresql://ec2-18-176-104-176.ap-northeast-1.compute.amazonaws.com:5432/d5vbsb633lee2q?sslmode=require"/>
+  </jndi:configuration>
+</jndi:namedResource>

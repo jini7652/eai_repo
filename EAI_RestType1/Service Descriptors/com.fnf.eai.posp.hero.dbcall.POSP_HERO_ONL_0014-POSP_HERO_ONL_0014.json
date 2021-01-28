@@ -1,0 +1,68 @@
+{
+  "swagger" : "2.0",
+  "info" : {
+    "version" : "1.0",
+    "title" : "POSP_HERO_ONL_0014",
+    "description" : "POSP_HERO_ONL_0014 service"
+  },
+  "host" : "localhost:8201",
+  "basePath" : "/",
+  "schemes" : [ "http" ],
+  "paths" : {
+    "/ZlistCustratio" : {
+      "post" : {
+        "summary" : "postPOSP_HERO_ONL_0014",
+        "description" : "postPOSP_HERO_ONL_0014",
+        "operationId" : "post-ZlistCustratio",
+        "consumes" : [ "application/json" ],
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "name" : "body",
+          "in" : "body",
+          "description" : "",
+          "schema" : {
+            "$ref" : "#/definitions/element"
+          },
+          "required" : true
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "a element to be returned",
+            "schema" : {
+              "$ref" : "#/definitions/element"
+            }
+          }
+        }
+      }
+    }
+  },
+  "definitions" : {
+    "REQUEST" : {
+      "type" : "object",
+      "required" : [ "V_BRAND", "V_SHOPCODE", "V_DATE", "V_CID" ],
+      "properties" : {
+        "V_DATE" : {
+          "type" : "string"
+        },
+        "V_BRAND" : {
+          "type" : "string"
+        },
+        "V_SHOPCODE" : {
+          "type" : "string"
+        },
+        "V_CID" : {
+          "type" : "string"
+        }
+      }
+    },
+    "element" : {
+      "type" : "object",
+      "required" : [ "REQUEST" ],
+      "properties" : {
+        "REQUEST" : {
+          "$ref" : "#/definitions/REQUEST"
+        }
+      }
+    }
+  }
+}

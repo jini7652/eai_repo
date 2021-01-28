@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<realm xmlns="http://xsd.tns.tibco.com/trinity/realm/2013" hashAlgorithm="PBKDF2WithHmacSHA256" repetitionCount="10240" xsi:schemaLocation="http://xsd.tns.tibco.com/trinity/realm/2013 Realm.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <users>
+
+    <user>
+      <name>john</name>
+      <!-- specify password as follows:
+      <plaintext>password</plaintext>
+      -->
+      <password salt="KvhPubAduq91Iqb6YA6O/yfK">YdN2K1RHDZ12INoQY8YakICJETTtnSXSE9FC1afQIBg=</password>
+      <!-- attributes are optional -->
+      <attribute name="tel" oid="optional">123-555-1234</attribute>
+    </user>
+
+    <user>
+      <name>eai_user</name>
+      <plaintext>eai_admin@fnfcorp</plaintext>
+      
+    </user>
+    <user>
+      <name>oms_user</name>
+      <plaintext>eai_oms@fnfcorp</plaintext>
+    </user><user>
+      <name>wms_user</name>
+      <plaintext>eai_wms@fnfcorp</plaintext>
+    </user>
+    
+    <user>
+      <name>merp_user</name>
+      <plaintext>eai_merp@fnfcorp</plaintext>
+    </user>
+    <user>
+      <name>herp_user</name>
+      <plaintext>eai_herp@fnfcorp</plaintext>
+    </user>
+    <user>
+      <name>cerp_user</name>
+      <plaintext>eai_cerp@fnfcorp</plaintext>
+    </user>
+    <user>
+      <name>sms_user</name>
+      <plaintext>eai_sms@fnfcorp</plaintext>
+    </user>   
+    <user>
+      <name>obo_user</name>
+      <plaintext>eai_obo@fnfcorp</plaintext>
+    </user>  
+    <user>
+      <name>omlb_user</name>
+      <plaintext>eai_omlb@fnfcorp</plaintext>
+    </user>
+    <user>
+      <name>odx_user</name>
+      <plaintext>eai_odx@fnfcorp</plaintext>
+    </user>    
+    <user>
+      <name>odv_user</name>
+      <plaintext>eai_odv@fnfcorp</plaintext>
+    </user>  
+    <user>
+      <name>oba_user</name>
+      <plaintext>eai_oba@fnfcorp</plaintext>
+    </user> 
+    <user>
+      <name>hero_user</name>
+      <plaintext>eai_herp@fnfcorp</plaintext>
+    </user>
+    <user>
+      <name>posa_user</name>
+      <plaintext>eai_posa@fnfcorp</plaintext>
+    </user>  
+    <user>
+      <name>posp_user</name>
+      <plaintext>eai_posp@fnfcorp</plaintext>
+    </user>   
+    <user>
+      <name>posc_user</name>
+      <plaintext>eai_posc@fnfcorp</plaintext>
+    </user>                                   
+  </users>
+
+  <group-mapping>
+    <group-name>managers</group-name>
+    <user-name>eai_user</user-name>
+    <user-name>oms_user</user-name>
+    <user-name>wms_user</user-name>
+    <user-name>merp_user</user-name>
+    <user-name>herp_user</user-name>
+    <user-name>cerp_user</user-name>
+    <user-name>sms_user</user-name>
+    <user-name>obo_user</user-name>
+    <user-name>omlb_user</user-name>
+    <user-name>odx_user</user-name>
+    <user-name>odv_user</user-name>
+    <user-name>oba_user</user-name>
+    <user-name>hero_user</user-name>
+    <user-name>posa_user</user-name>
+    <user-name>posp_user</user-name>
+    <user-name>posc_user</user-name>
+  </group-mapping>
+
+  <group-mapping>
+    <group-name>administrators</group-name>
+    <user-name>eai_user</user-name>
+  </group-mapping>
+
+
+</realm>

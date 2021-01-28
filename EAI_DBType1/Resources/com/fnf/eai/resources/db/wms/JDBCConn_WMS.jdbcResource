@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jndi:namedResource xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:jdbc="http://xsd.tns.tibco.com/amf/models/sharedresource/jdbc" xmlns:jndi="http://xsd.tns.tibco.com/amf/models/sharedresource/jndi" xmlns:subject="http://xsd.tns.tibco.com/trinity/models/identity/subject" xmi:id="_kt-2MVTEEeulPID_NHzCZg" name="com.fnf.eai.resources.db.wms.JDBCConn_WMS" type="jdbc:JdbcDataSource">
+  <jndi:reference xmi:id="_kt-2MlTEEeulPID_NHzCZg" key="subjectJndiName" type="subject:SubjectConfiguration" value=""/>
+  <jndi:configuration xsi:type="jdbc:JdbcDataSource" xmi:id="_kt-2M1TEEeulPID_NHzCZg" username="FNF_IF" password="#!/GhE/bsrcnNYuFTzXeOTP/A83Cq55EGwgl6lY7z6NeA=">
+    <connectionConfig xsi:type="jdbc:NonXaConnection" xmi:id="_kt-2NFTEEeulPID_NHzCZg" jdbcDriver="tibcosoftwareinc.jdbc.oracle.OracleDriver" dbURL="jdbc:tibcosoftwareinc:oracle://TDB.FNF.CO.KR:1521;ServiceName=FNF"/>
+  </jndi:configuration>
+</jndi:namedResource>

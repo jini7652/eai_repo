@@ -1,0 +1,83 @@
+{
+  "swagger" : "2.0",
+  "info" : {
+    "version" : "1.0",
+    "title" : "Resource",
+    "description" : "POSP_HERO_ONL_0005 service"
+  },
+  "host" : "localhost:8201",
+  "basePath" : "/",
+  "schemes" : [ "http" ],
+  "paths" : {
+    "/UseCoupon" : {
+      "post" : {
+        "summary" : "postPOSP_HERO_ONL_0022",
+        "description" : "Create a new item",
+        "operationId" : "createItem",
+        "consumes" : [ "application/json" ],
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "name" : "body",
+          "in" : "body",
+          "description" : "",
+          "schema" : {
+            "$ref" : "#/definitions/element"
+          },
+          "required" : true
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "a element to be returned",
+            "schema" : {
+              "$ref" : "#/definitions/element"
+            }
+          }
+        }
+      }
+    }
+  },
+  "definitions" : {
+    "REQUEST" : {
+      "type" : "object",
+      "required" : [ "V_BRAND", "V_SPD_AMOUNT", "V_USE_COUPON", "V_SPD_SHOPCODE", "V_PARTCODE", "V_USERID", "V_ISSUENO", "V_SEASON", "V_COUPON_NO" ],
+      "properties" : {
+        "V_ISSUENO" : {
+          "type" : "string"
+        },
+        "V_COUPON_NO" : {
+          "type" : "string"
+        },
+        "V_BRAND" : {
+          "type" : "string"
+        },
+        "V_SEASON" : {
+          "type" : "string"
+        },
+        "V_PARTCODE" : {
+          "type" : "string"
+        },
+        "V_SPD_SHOPCODE" : {
+          "type" : "string"
+        },
+        "V_SPD_AMOUNT" : {
+          "type" : "integer"
+        },
+        "V_USERID" : {
+          "type" : "string"
+        },
+        "V_USE_COUPON" : {
+          "type" : "string"
+        }
+      }
+    },
+    "element" : {
+      "type" : "object",
+      "required" : [ "REQUEST" ],
+      "properties" : {
+        "REQUEST" : {
+          "$ref" : "#/definitions/REQUEST"
+        }
+      }
+    }
+  }
+}

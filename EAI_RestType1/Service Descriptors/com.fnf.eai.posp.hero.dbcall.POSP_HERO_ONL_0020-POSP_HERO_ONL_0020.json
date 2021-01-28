@@ -1,0 +1,62 @@
+{
+  "swagger" : "2.0",
+  "info" : {
+    "version" : "1.0",
+    "title" : "POSP_HERO_ONL_0020",
+    "description" : "POSP_HERO_ONL_0020 service"
+  },
+  "host" : "localhost:8201",
+  "basePath" : "/",
+  "schemes" : [ "http" ],
+  "paths" : {
+    "/CouponBalanceInfomation" : {
+      "post" : {
+        "summary" : "postPOSP_HERO_ONL_0020",
+        "description" : "postPOSP_HERO_ONL_0020",
+        "operationId" : "post-CouponBalanceInfomation",
+        "consumes" : [ "application/json" ],
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "name" : "body",
+          "in" : "body",
+          "description" : "",
+          "schema" : {
+            "$ref" : "#/definitions/element"
+          },
+          "required" : true
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "a element to be returned",
+            "schema" : {
+              "$ref" : "#/definitions/element"
+            }
+          }
+        }
+      }
+    }
+  },
+  "definitions" : {
+    "REQUEST" : {
+      "type" : "object",
+      "required" : [ "V_BRAND", "V_COUPON_NO" ],
+      "properties" : {
+        "V_BRAND" : {
+          "type" : "string"
+        },
+        "V_COUPON_NO" : {
+          "type" : "string"
+        }
+      }
+    },
+    "element" : {
+      "type" : "object",
+      "required" : [ "REQUEST" ],
+      "properties" : {
+        "REQUEST" : {
+          "$ref" : "#/definitions/REQUEST"
+        }
+      }
+    }
+  }
+}

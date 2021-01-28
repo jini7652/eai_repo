@@ -1,0 +1,74 @@
+{
+  "swagger" : "2.0",
+  "info" : {
+    "version" : "1.0",
+    "title" : "POSA_HERO_ONL_0005",
+    "description" : "POSA_HERO_ONL_0005 service"
+  },
+  "host" : "localhost:8201",
+  "basePath" : "/",
+  "schemes" : [ "http" ],
+  "paths" : {
+    "/ASCustMember" : {
+      "post" : {
+        "summary" : "postPOSA_HERO_ONL_0005",
+        "description" : "postPOSA_HERO_ONL_0005",
+        "operationId" : "post-ASCustMember",
+        "consumes" : [ "application/json" ],
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "name" : "body",
+          "in" : "body",
+          "description" : "",
+          "schema" : {
+            "$ref" : "#/definitions/element"
+          },
+          "required" : true
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "a element to be returned",
+            "schema" : {
+              "$ref" : "#/definitions/element"
+            }
+          }
+        }
+      }
+    }
+  },
+  "definitions" : {
+    "REQUEST" : {
+      "type" : "object",
+      "required" : [ "V_CUST_NM", "V_BRAND", "V_MS_NO", "V_BIRTH_DAY", "V_CUST_ID", "V_CUST_TEL_NO" ],
+      "properties" : {
+        "V_BRAND" : {
+          "type" : "string"
+        },
+        "V_CUST_ID" : {
+          "type" : "string"
+        },
+        "V_CUST_NM" : {
+          "type" : "string"
+        },
+        "V_BIRTH_DAY" : {
+          "type" : "string"
+        },
+        "V_CUST_TEL_NO" : {
+          "type" : "string"
+        },
+        "V_MS_NO" : {
+          "type" : "string"
+        }
+      }
+    },
+    "element" : {
+      "type" : "object",
+      "required" : [ "REQUEST" ],
+      "properties" : {
+        "REQUEST" : {
+          "$ref" : "#/definitions/REQUEST"
+        }
+      }
+    }
+  }
+}

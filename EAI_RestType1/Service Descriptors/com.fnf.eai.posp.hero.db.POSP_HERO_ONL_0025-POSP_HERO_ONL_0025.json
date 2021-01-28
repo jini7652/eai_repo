@@ -1,0 +1,68 @@
+{
+  "swagger" : "2.0",
+  "info" : {
+    "version" : "1.0",
+    "title" : "POSP_HERO_ONL_0025",
+    "description" : "POSP_HERO_ONL_0025 service"
+  },
+  "host" : "localhost:8080",
+  "basePath" : "/",
+  "schemes" : [ "http" ],
+  "paths" : {
+    "/CouponPartsInfomation" : {
+      "post" : {
+        "summary" : "postPOSP_HERO_ONL_0025",
+        "description" : "postPOSP_HERO_ONL_0025",
+        "operationId" : "post-CouponPartsInfomation",
+        "consumes" : [ "application/json" ],
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "name" : "body",
+          "in" : "body",
+          "description" : "",
+          "schema" : {
+            "$ref" : "#/definitions/element"
+          },
+          "required" : true
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "a element to be returned",
+            "schema" : {
+              "$ref" : "#/definitions/element"
+            }
+          }
+        }
+      }
+    }
+  },
+  "definitions" : {
+    "REQUEST" : {
+      "type" : "object",
+      "required" : [ "V_BRAND", "V_PARTCODE", "V_SEASON", "V_COUPON_NO" ],
+      "properties" : {
+        "V_COUPON_NO" : {
+          "type" : "string"
+        },
+        "V_BRAND" : {
+          "type" : "string"
+        },
+        "V_SEASON" : {
+          "type" : "string"
+        },
+        "V_PARTCODE" : {
+          "type" : "string"
+        }
+      }
+    },
+    "element" : {
+      "type" : "object",
+      "required" : [ "REQUEST" ],
+      "properties" : {
+        "REQUEST" : {
+          "$ref" : "#/definitions/REQUEST"
+        }
+      }
+    }
+  }
+}

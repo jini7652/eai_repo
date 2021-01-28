@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sca:composite xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:BW="http://xsd.tns.tibco.com/amf/models/sca/implementationtype/BW" xmlns:XMLSchema="http://www.w3.org/2001/XMLSchema" xmlns:compositeext="http://schemas.tibco.com/amx/3.0/compositeext" xmlns:rest="http://xsd.tns.tibco.com/bw/models/binding/rest" xmlns:sca="http://www.osoa.org/xmlns/sca/1.0" xmlns:scact="http://xsd.tns.tibco.com/amf/models/sca/componentType" xmlns:scaext="http://xsd.tns.tibco.com/amf/models/sca/extensions" xmi:id="_CxvDUFuMEeuuFdW94JphNg" targetNamespace="http://tns.tibco.com/bw/composite/EAI_RestType1" name="EAI_RestType1" compositeext:version="1.0.0" compositeext:formatVersion="2">
+  <sca:service xmi:id="_OktawFuPEeuj8-eCBagg6Q" name="ZlistCustMember" promote="ComponentPOSP_HERO_ONL_0005/ZlistCustMember">
+    <sca:interface.wsdl xmi:id="_Ok19oFuPEeuj8-eCBagg6Q" interface="http://xmlns.example.com/20210120184325PLT#wsdl.interface(ZlistCustMember)"/>
+    <scaext:binding xsi:type="rest:RestServiceBinding" xmi:id="_nGThQFuPEeuj8-eCBagg6Q" name="RestService" path="/ZlistCustMember" docBasePath="http://localhost:7777/EAI_RestType1" docResourcePath="Resource" connector="com.fnf.eai.resources.http.server.eai.HTTPConnectorResource" structuredData="true" technologyVersion="2.0">
+      <operation xmi:id="_nGg8oFuPEeuj8-eCBagg6Q" operationName="post" nickname="createItem" httpMethod="POST" notes="Create a new item"/>
+      <clientFormat>JSON</clientFormat>
+      <advancedConfig xmi:id="_nGThQVuPEeuj8-eCBagg6Q" blockingQueueSize="2147483647"/>
+    </scaext:binding>
+    <scact:bindingAdjunct xmi:id="_nGg8oVuPEeuj8-eCBagg6Q" bindingName="RestService"/>
+  </sca:service>
+  <sca:service xmi:id="_oBr5gFuREeuj8-eCBagg6Q" name="MemberInformation" promote="ComponentOBO_HERO_ONL_0004/MemberInformation">
+    <sca:interface.wsdl xmi:id="_oBr5hFuREeuj8-eCBagg6Q" interface="http://xmlns.example.com/20210120231959PLT#wsdl.interface(MemberInformation)"/>
+    <scaext:binding xsi:type="rest:RestServiceBinding" xmi:id="_cGUeQFuSEeuj8-eCBagg6Q" name="RestService1" path="/MemberInformation" docBasePath="http://localhost:7777/EAI_RestType1" docResourcePath="Resource" connector="com.fnf.eai.resources.http.server.eai.HTTPConnectorResource" structuredData="true" technologyVersion="2.0">
+      <operation xmi:id="_cGbzAFuSEeuj8-eCBagg6Q" operationName="post" nickname="createItem" httpMethod="POST" notes="Create a new item"/>
+      <clientFormat>JSON</clientFormat>
+      <advancedConfig xmi:id="_cGUeQVuSEeuj8-eCBagg6Q" blockingQueueSize="2147483647"/>
+    </scaext:binding>
+    <scact:bindingAdjunct xmi:id="_cGbzAVuSEeuj8-eCBagg6Q" bindingName="RestService1"/>
+  </sca:service>
+  <sca:service xmi:id="_6f598Fu1EeuUG6cQFJep7w" name="ASCustMember" promote="ComponentPOSA_HERO_ONL_0005/ASCustMember">
+    <sca:interface.wsdl xmi:id="_6gYfEFu1EeuUG6cQFJep7w" interface="http://xmlns.example.com/20210121155723PLT#wsdl.interface(ASCustMember)" scaext:wsdlLocation="../Processes/com/fnf/eai/posa/hero/dbcall/POSA_HERO_ONL_0005.bwp"/>
+    <scaext:binding xsi:type="rest:RestServiceBinding" xmi:id="_6gt2QFu1EeuUG6cQFJep7w" name="RestService2" path="/ASCustMember" docBasePath="http://localhost:7777/EAI_RestType1" docResourcePath="POSA_HERO_ONL_0005" basePath="/" connector="com.fnf.eai.resources.http.server.eai.HTTPConnectorResource" structuredData="true" technologyVersion="2.0" implementation="Service Descriptors/com.fnf.eai.posa.hero.dbcall.POSA_HERO_ONL_0005-POSA_HERO_ONL_0005.json">
+      <operation xmi:id="_6g2ZIFu1EeuUG6cQFJep7w" operationName="post" nickname="post-ASCustMember" httpMethod="POST" notes="postPOSA_HERO_ONL_0005" responseStyle="element" requestStyle="element" outputPartName="item">
+        <clientFormat>json</clientFormat>
+        <clientRequestFormat>json</clientRequestFormat>
+      </operation>
+      <advancedConfig xmi:id="_6gt2QVu1EeuUG6cQFJep7w" blockingQueueSize="2147483647"/>
+    </scaext:binding>
+    <scact:bindingAdjunct xmi:id="_6g2ZIVu1EeuUG6cQFJep7w" bindingName="RestService2"/>
+  </sca:service>
+  <sca:service xmi:id="_GG7wkFxoEeuLpuk1OyPEuw" name="ZlistCoupon" promote="ComponentPOSP_HERO_ONL_0017/ZlistCoupon">
+    <sca:interface.wsdl xmi:id="_GHVZMFxoEeuLpuk1OyPEuw" interface="http://xmlns.example.com/20210122131251PLT#wsdl.interface(ZlistCoupon)" scaext:wsdlLocation="../Processes/com/fnf/eai/posp/hero/dbcall/POSP_HERO_ONL_0017.bwp"/>
+    <scaext:binding xsi:type="rest:RestServiceBinding" xmi:id="_GHwP8FxoEeuLpuk1OyPEuw" name="RestService3" path="/ZlistCoupon" docBasePath="http://localhost:7777/EAI_RestType1" docResourcePath="POSP_HERO_ONL_0017" basePath="/" connector="com.fnf.eai.resources.http.server.eai.HTTPConnectorResource" structuredData="true" technologyVersion="2.0" implementation="Service Descriptors/com.fnf.eai.posp.hero.dbcall.POSP_HERO_ONL_0017-POSP_HERO_ONL_0017.json">
+      <operation xmi:id="_GH7PEFxoEeuLpuk1OyPEuw" operationName="post" nickname="post-ZlistCoupon" httpMethod="POST" notes="postPOSP_HERO_ONL_0017" responseStyle="element" requestStyle="element" outputPartName="item">
+        <clientFormat>json</clientFormat>
+        <clientRequestFormat>json</clientRequestFormat>
+      </operation>
+      <parameters xmi:id="_GIEZAFxoEeuLpuk1OyPEuw"/>
+      <advancedConfig xmi:id="_GHwP8VxoEeuLpuk1OyPEuw" blockingQueueSize="2147483647"/>
+    </scaext:binding>
+    <scact:bindingAdjunct xmi:id="_GH7PEVxoEeuLpuk1OyPEuw" bindingName="RestService3"/>
+  </sca:service>
+  <sca:service xmi:id="_WtUXMlxsEeuLpuk1OyPEuw" name="ZlistCouponShop" promote="ComponentPOSP_HERO_ONL_0018/ZlistCouponShop">
+    <sca:interface.wsdl xmi:id="_WtU-QFxsEeuLpuk1OyPEuw" interface="http://xmlns.example.com/20210122134321PLT#wsdl.interface(ZlistCouponShop)" scaext:wsdlLocation="../Processes/com/fnf/eai/posp/hero/dbcall/POSP_HERO_ONL_0018.bwp"/>
+    <scaext:binding xsi:type="rest:RestServiceBinding" xmi:id="_WtkO0FxsEeuLpuk1OyPEuw" name="RestService4" path="/ZlistCouponShop" docBasePath="http://localhost:7777/EAI_RestType1" docResourcePath="POSP_HERO_ONL_0018" basePath="/" connector="com.fnf.eai.resources.http.server.eai.HTTPConnectorResource" structuredData="true" technologyVersion="2.0" implementation="Service Descriptors/com.fnf.eai.posp.hero.dbcall.POSP_HERO_ONL_0018-POSP_HERO_ONL_0018.json">
+      <operation xmi:id="_Wtv1AFxsEeuLpuk1OyPEuw" operationName="post" nickname="post-ZlistCouponShop" httpMethod="POST" notes="postPOSP_HERO_ONL_0018" responseStyle="element" requestStyle="element" outputPartName="item">
+        <clientFormat>json</clientFormat>
+        <clientRequestFormat>json</clientRequestFormat>
+      </operation>
+      <parameters xmi:id="_Wt0tgFxsEeuLpuk1OyPEuw"/>
+      <advancedConfig xmi:id="_Wtk14FxsEeuLpuk1OyPEuw" blockingQueueSize="2147483647"/>
+    </scaext:binding>
+    <scact:bindingAdjunct xmi:id="_Wtv1AVxsEeuLpuk1OyPEuw" bindingName="RestService4"/>
+  </sca:service>
+  <sca:service xmi:id="_5KL3MFxwEeuLpuk1OyPEuw" name="CouponBalanceInfomation" promote="ComponentPOSP_HERO_ONL_0020/CouponBalanceInfomation">
+    <sca:interface.wsdl xmi:id="_5KMeQFxwEeuLpuk1OyPEuw" interface="http://xmlns.example.com/20210122141550PLT#wsdl.interface(CouponBalanceInfomation)" scaext:wsdlLocation="../Processes/com/fnf/eai/posp/hero/dbcall/POSP_HERO_ONL_0020.bwp"/>
+    <scaext:binding xsi:type="rest:RestServiceBinding" xmi:id="_5Kbu0FxwEeuLpuk1OyPEuw" name="RestService5" path="/CouponBalanceInfomation" docBasePath="http://localhost:7777/EAI_RestType1" docResourcePath="POSP_HERO_ONL_0020" basePath="/" connector="com.fnf.eai.resources.http.server.eai.HTTPConnectorResource" structuredData="true" technologyVersion="2.0" implementation="Service Descriptors/com.fnf.eai.posp.hero.dbcall.POSP_HERO_ONL_0020-POSP_HERO_ONL_0020.json">
+      <operation xmi:id="_5KojIFxwEeuLpuk1OyPEuw" operationName="post" nickname="post-CouponBalanceInfomation" httpMethod="POST" notes="postPOSP_HERO_ONL_0020" responseStyle="element" requestStyle="element" outputPartName="item">
+        <clientFormat>json</clientFormat>
+        <clientRequestFormat>json</clientRequestFormat>
+      </operation>
+      <parameters xmi:id="_5Ks0kFxwEeuLpuk1OyPEuw"/>
+      <advancedConfig xmi:id="_5Kbu0VxwEeuLpuk1OyPEuw" blockingQueueSize="2147483647"/>
+    </scaext:binding>
+    <scact:bindingAdjunct xmi:id="_5KojIVxwEeuLpuk1OyPEuw" bindingName="RestService5"/>
+  </sca:service>
+  <sca:service xmi:id="_nKXL4VyBEeuLpuk1OyPEuw" name="CouponPartsInfomation" promote="ComponentPOSP_HERO_ONL_0025/CouponPartsInfomation">
+    <sca:interface.wsdl xmi:id="_nKYaAFyBEeuLpuk1OyPEuw" interface="http://xmlns.example.com/20210122161530PLT#wsdl.interface(CouponPartsInfomation)" scaext:wsdlLocation="../Processes/com/fnf/eai/posp/hero/dbcall/POSP_HERO_ONL_0025.bwp"/>
+    <scaext:binding xsi:type="rest:RestServiceBinding" xmi:id="_nKo4sFyBEeuLpuk1OyPEuw" name="RestService6" path="/CouponPartsInfomation" docBasePath="http://localhost:7777/EAI_RestType1" docResourcePath="POSP_HERO_ONL_0025" basePath="/" connector="com.fnf.eai.resources.http.server.eai.HTTPConnectorResource" structuredData="true" technologyVersion="2.0" implementation="Service Descriptors/com.fnf.eai.posp.hero.dbcall.POSP_HERO_ONL_0025-POSP_HERO_ONL_0025.json">
+      <operation xmi:id="_nK2UEFyBEeuLpuk1OyPEuw" operationName="post" nickname="post-CouponPartsInfomation" httpMethod="POST" notes="postPOSP_HERO_ONL_0025" responseStyle="element" requestStyle="element" outputPartName="item">
+        <clientFormat>json</clientFormat>
+        <clientRequestFormat>json</clientRequestFormat>
+      </operation>
+      <parameters xmi:id="_nK7zoFyBEeuLpuk1OyPEuw"/>
+      <advancedConfig xmi:id="_nKo4sVyBEeuLpuk1OyPEuw" blockingQueueSize="2147483647"/>
+    </scaext:binding>
+    <scact:bindingAdjunct xmi:id="_nK2UEVyBEeuLpuk1OyPEuw" bindingName="RestService6"/>
+  </sca:service>
+  <sca:service xmi:id="_l8eJgVyOEeuLpuk1OyPEuw" name="ZlistCustratio" promote="ComponentPOSP_HERO_ONL_0014/ZlistCustratio">
+    <sca:interface.wsdl xmi:id="_l8qWwFyOEeuLpuk1OyPEuw" interface="http://xmlns.example.com/20210122174825PLT#wsdl.interface(ZlistCustratio)" scaext:wsdlLocation="../Processes/com/fnf/eai/posp/hero/dbcall/POSP_HERO_ONL_0014.bwp"/>
+    <scaext:binding xsi:type="rest:RestServiceBinding" xmi:id="_l9NJUFyOEeuLpuk1OyPEuw" name="RestService7" path="/ZlistCustratio" docBasePath="http://localhost:7777/EAI_RestType1" docResourcePath="POSP_HERO_ONL_0014" basePath="/" connector="com.fnf.eai.resources.http.server.eai.HTTPConnectorResource" structuredData="true" technologyVersion="2.0" implementation="Service Descriptors/com.fnf.eai.posp.hero.dbcall.POSP_HERO_ONL_0014-POSP_HERO_ONL_0014.json">
+      <operation xmi:id="_l9YIcFyOEeuLpuk1OyPEuw" operationName="post" nickname="post-ZlistCustratio" httpMethod="POST" notes="postPOSP_HERO_ONL_0014" responseStyle="element" requestStyle="element" outputPartName="item">
+        <clientFormat>json</clientFormat>
+        <clientRequestFormat>json</clientRequestFormat>
+      </operation>
+      <parameters xmi:id="_l9mx8FyOEeuLpuk1OyPEuw"/>
+      <advancedConfig xmi:id="_l9NJUVyOEeuLpuk1OyPEuw" blockingQueueSize="2147483647"/>
+    </scaext:binding>
+    <scact:bindingAdjunct xmi:id="_l9YIcVyOEeuLpuk1OyPEuw" bindingName="RestService7"/>
+  </sca:service>
+  <sca:service xmi:id="_u9P4Ml7YEeuGjJ-uY77tug" name="UseCoupon" promote="ComponentPOSP_HERO_ONL_0022/UseCoupon">
+    <sca:interface.wsdl xmi:id="_u9P4Nl7YEeuGjJ-uY77tug" interface="http://xmlns.example.com/20210125154411PLT#wsdl.interface(UseCoupon)" scaext:wsdlLocation="../Processes/com/fnf/eai/posp/hero/db/POSP_HERO_ONL_0022.bwp"/>
+    <scaext:binding xsi:type="rest:RestServiceBinding" xmi:id="_u9X0AF7YEeuGjJ-uY77tug" name="RestService8" path="/UseCoupon" docBasePath="http://localhost:7777/EAI_RestType1" docResourcePath="POSP_HERO_ONL_0022" basePath="/" connector="com.fnf.eai.resources.http.server.eai.HTTPConnectorResource" structuredData="true" technologyVersion="2.0" implementation="Service Descriptors/com.fnf.eai.posp.hero.db.POSP_HERO_ONL_0022-POSP_HERO_ONL_0022.json" policySets="com.fnf.eai.resources.policy.BasicAuthentication" scaext:policySetLocations="BWRestHttpServiceBinding">
+      <operation xmi:id="_u9koUF7YEeuGjJ-uY77tug" operationName="post" nickname="post-UseCoupon" httpMethod="POST" notes="postPOSP_HERO_ONL_0022" responseStyle="element" requestStyle="element" outputPartName="item">
+        <clientFormat>json</clientFormat>
+        <clientRequestFormat>json</clientRequestFormat>
+      </operation>
+      <parameters xmi:id="_u9lPYF7YEeuGjJ-uY77tug"/>
+      <advancedConfig xmi:id="_u9X0AV7YEeuGjJ-uY77tug" blockingQueueSize="2147483647"/>
+    </scaext:binding>
+    <scact:bindingAdjunct xmi:id="_u9koUV7YEeuGjJ-uY77tug" bindingName="RestService8"/>
+  </sca:service>
+  <sca:service xmi:id="_bq7NwF7qEeuCecKTZ9VFbA" name="BCoCustMemberInfo" promote="ComponentBOA_HERO_ONL_0004/BCoCustMemberInfo">
+    <sca:interface.wsdl xmi:id="_brq0oF7qEeuCecKTZ9VFbA" interface="http://xmlns.example.com/20210125175053PLT#wsdl.interface(BCoCustMemberInfo)" scaext:wsdlLocation="../Processes/com/fnf/eai/boa/hero/db/BOA_HERO_ONL_0004.bwp"/>
+    <scaext:binding xsi:type="rest:RestServiceBinding" xmi:id="_br-WoF7qEeuCecKTZ9VFbA" name="RestService9" path="/BCoCustMemberInfo" docBasePath="http://localhost:7777/EAI_RestType1" docResourcePath="BOA_HERO_ONL_0004" basePath="/" connector="com.fnf.eai.resources.http.server.eai.HTTPConnectorResource" structuredData="true" technologyVersion="2.0" implementation="Service Descriptors/com.fnf.eai.boa.hero.db.BOA_HERO_ONL_0004-BOA_HERO_ONL_0004.json">
+      <operation xmi:id="_bsJ80F7qEeuCecKTZ9VFbA" operationName="post" nickname="post-BCoCustMemberInfo" httpMethod="POST" notes="postBOA_HERO_ONL_0004" responseStyle="element" requestStyle="element" outputPartName="item">
+        <clientFormat>json</clientFormat>
+        <clientRequestFormat>json</clientRequestFormat>
+      </operation>
+      <parameters xmi:id="_bsOOQF7qEeuCecKTZ9VFbA"/>
+      <advancedConfig xmi:id="_br-WoV7qEeuCecKTZ9VFbA" blockingQueueSize="2147483647"/>
+    </scaext:binding>
+    <scact:bindingAdjunct xmi:id="_bsJ80V7qEeuCecKTZ9VFbA" bindingName="RestService9"/>
+  </sca:service>
+  <sca:property xmi:id="_C7OWgFuMEeuuFdW94JphNg" name="BW.DEPLOYMENTUNIT.TYPE" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_C8L_0FuMEeuuFdW94JphNg" name="BW.APPNODE.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_C9JpIFuMEeuuFdW94JphNg" name="BW.DEPLOYMENTUNIT.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_C-H5gFuMEeuuFdW94JphNg" name="BW.HOST.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_C_SXIFuMEeuuFdW94JphNg" name="BW.DOMAIN.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_DAOLQFuMEeuuFdW94JphNg" name="BW.DEPLOYMENTUNIT.VERSION" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_DBKmcFuMEeuuFdW94JphNg" name="BW.APPSPACE.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_DCMhMFuMEeuuFdW94JphNg" name="BW.MODULE.VERSION" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_DDJjcFuMEeuuFdW94JphNg" name="BW.MODULE.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:component xmi:id="_OkW1cFuPEeuj8-eCBagg6Q" name="ComponentPOSP_HERO_ONL_0005" compositeext:version="1.0.0.qualifier">
+    <scaext:implementation xsi:type="BW:BWComponentImplementation" xmi:id="_OkW1cVuPEeuj8-eCBagg6Q" processName="com.fnf.eai.posp.hero.db.POSP_HERO_ONL_0005"/>
+    <sca:service xmi:id="_OkoiQFuPEeuj8-eCBagg6Q" name="ZlistCustMember">
+      <sca:interface.wsdl xmi:id="_OkpwYFuPEeuj8-eCBagg6Q" interface="http://xmlns.example.com/20210120184325PLT#wsdl.interface(ZlistCustMember)"/>
+    </sca:service>
+  </sca:component>
+  <sca:component xmi:id="_oBo2MFuREeuj8-eCBagg6Q" name="ComponentOBO_HERO_ONL_0004" compositeext:version="1.0.0.qualifier">
+    <scaext:implementation xsi:type="BW:BWComponentImplementation" xmi:id="_oBo2MVuREeuj8-eCBagg6Q" processName="com.fnf.eai.obo.hero.rest.OBO_HERO_ONL_0004"/>
+    <sca:service xmi:id="_oBrScFuREeuj8-eCBagg6Q" name="MemberInformation">
+      <sca:interface.wsdl xmi:id="_oBrScVuREeuj8-eCBagg6Q" interface="http://xmlns.example.com/20210120231959PLT#wsdl.interface(MemberInformation)"/>
+    </sca:service>
+  </sca:component>
+  <sca:component xmi:id="_6foRIFu1EeuUG6cQFJep7w" name="ComponentPOSA_HERO_ONL_0005" compositeext:version="1.0.0.qualifier">
+    <scaext:implementation xsi:type="BW:BWComponentImplementation" xmi:id="_6foRIVu1EeuUG6cQFJep7w" processName="com.fnf.eai.posa.hero.db.POSA_HERO_ONL_0005"/>
+    <sca:service xmi:id="_6ftJoFu1EeuUG6cQFJep7w" name="ASCustMember">
+      <sca:interface.wsdl xmi:id="_6f26oFu1EeuUG6cQFJep7w" interface="http://xmlns.example.com/20210121155723PLT#wsdl.interface(ASCustMember)" scaext:wsdlLocation="../Processes/com/fnf/eai/posa/hero/dbcall/POSA_HERO_ONL_0005.bwp"/>
+    </sca:service>
+  </sca:component>
+  <sca:component xmi:id="_GGbaQFxoEeuLpuk1OyPEuw" name="ComponentPOSP_HERO_ONL_0017" compositeext:version="1.0.0.qualifier">
+    <scaext:implementation xsi:type="BW:BWComponentImplementation" xmi:id="_GGbaQVxoEeuLpuk1OyPEuw" processName="com.fnf.eai.posp.hero.db.POSP_HERO_ONL_0017"/>
+    <sca:service xmi:id="_GGtHEFxoEeuLpuk1OyPEuw" name="ZlistCoupon">
+      <sca:interface.wsdl xmi:id="_GG1p8FxoEeuLpuk1OyPEuw" interface="http://xmlns.example.com/20210122131251PLT#wsdl.interface(ZlistCoupon)" scaext:wsdlLocation="../Processes/com/fnf/eai/posp/hero/dbcall/POSP_HERO_ONL_0017.bwp"/>
+    </sca:service>
+  </sca:component>
+  <sca:component xmi:id="_WtQFwFxsEeuLpuk1OyPEuw" name="ComponentPOSP_HERO_ONL_0018" compositeext:version="1.0.0.qualifier">
+    <scaext:implementation xsi:type="BW:BWComponentImplementation" xmi:id="_WtQFwVxsEeuLpuk1OyPEuw" processName="com.fnf.eai.posp.hero.db.POSP_HERO_ONL_0018"/>
+    <sca:service xmi:id="_WtUXMFxsEeuLpuk1OyPEuw" name="ZlistCouponShop">
+      <sca:interface.wsdl xmi:id="_WtUXMVxsEeuLpuk1OyPEuw" interface="http://xmlns.example.com/20210122134321PLT#wsdl.interface(ZlistCouponShop)" scaext:wsdlLocation="../Processes/com/fnf/eai/posp/hero/dbcall/POSP_HERO_ONL_0018.bwp"/>
+    </sca:service>
+  </sca:component>
+  <sca:component xmi:id="_5KFwkFxwEeuLpuk1OyPEuw" name="ComponentPOSP_HERO_ONL_0020" compositeext:version="1.0.0.qualifier">
+    <scaext:implementation xsi:type="BW:BWComponentImplementation" xmi:id="_5KFwkVxwEeuLpuk1OyPEuw" processName="com.fnf.eai.posp.hero.db.POSP_HERO_ONL_0020"/>
+    <sca:service xmi:id="_5KLQIFxwEeuLpuk1OyPEuw" name="CouponBalanceInfomation">
+      <sca:interface.wsdl xmi:id="_5KLQIVxwEeuLpuk1OyPEuw" interface="http://xmlns.example.com/20210122141550PLT#wsdl.interface(CouponBalanceInfomation)" scaext:wsdlLocation="../Processes/com/fnf/eai/posp/hero/dbcall/POSP_HERO_ONL_0020.bwp"/>
+    </sca:service>
+  </sca:component>
+  <sca:component xmi:id="_nKRsUFyBEeuLpuk1OyPEuw" name="ComponentPOSP_HERO_ONL_0025" compositeext:version="1.0.0.qualifier">
+    <scaext:implementation xsi:type="BW:BWComponentImplementation" xmi:id="_nKRsUVyBEeuLpuk1OyPEuw" processName="com.fnf.eai.posp.hero.db.POSP_HERO_ONL_0025"/>
+    <sca:service xmi:id="_nKWk0FyBEeuLpuk1OyPEuw" name="CouponPartsInfomation">
+      <sca:interface.wsdl xmi:id="_nKXL4FyBEeuLpuk1OyPEuw" interface="http://xmlns.example.com/20210122161530PLT#wsdl.interface(CouponPartsInfomation)" scaext:wsdlLocation="../Processes/com/fnf/eai/posp/hero/dbcall/POSP_HERO_ONL_0025.bwp"/>
+    </sca:service>
+  </sca:component>
+  <sca:component xmi:id="_l8PgAFyOEeuLpuk1OyPEuw" name="ComponentPOSP_HERO_ONL_0014" compositeext:version="1.0.0.qualifier">
+    <scaext:implementation xsi:type="BW:BWComponentImplementation" xmi:id="_l8PgAVyOEeuLpuk1OyPEuw" processName="com.fnf.eai.posp.hero.db.POSP_HERO_ONL_0014"/>
+    <sca:service xmi:id="_l8dicFyOEeuLpuk1OyPEuw" name="ZlistCustratio">
+      <sca:interface.wsdl xmi:id="_l8eJgFyOEeuLpuk1OyPEuw" interface="http://xmlns.example.com/20210122174825PLT#wsdl.interface(ZlistCustratio)" scaext:wsdlLocation="../Processes/com/fnf/eai/posp/hero/dbcall/POSP_HERO_ONL_0014.bwp"/>
+    </sca:service>
+  </sca:component>
+  <sca:component xmi:id="_u9PRIF7YEeuGjJ-uY77tug" name="ComponentPOSP_HERO_ONL_0022" compositeext:version="1.0.0.qualifier">
+    <scaext:implementation xsi:type="BW:BWComponentImplementation" xmi:id="_u9PRIV7YEeuGjJ-uY77tug" processName="com.fnf.eai.posp.hero.db.POSP_HERO_ONL_0022"/>
+    <sca:service xmi:id="_u9P4MF7YEeuGjJ-uY77tug" name="UseCoupon">
+      <sca:interface.wsdl xmi:id="_u9P4MV7YEeuGjJ-uY77tug" interface="http://xmlns.example.com/20210125154411PLT#wsdl.interface(UseCoupon)" scaext:wsdlLocation="../Processes/com/fnf/eai/posp/hero/db/POSP_HERO_ONL_0022.bwp"/>
+    </sca:service>
+  </sca:component>
+  <sca:component xmi:id="_bqM1AF7qEeuCecKTZ9VFbA" name="ComponentBOA_HERO_ONL_0004" compositeext:version="1.0.0.qualifier">
+    <scaext:implementation xsi:type="BW:BWComponentImplementation" xmi:id="_bqNcEF7qEeuCecKTZ9VFbA" processName="com.fnf.eai.boa.hero.db.BOA_HERO_ONL_0004"/>
+    <sca:service xmi:id="_bqdTsF7qEeuCecKTZ9VFbA" name="BCoCustMemberInfo">
+      <sca:interface.wsdl xmi:id="_bqqvEF7qEeuCecKTZ9VFbA" interface="http://xmlns.example.com/20210125175053PLT#wsdl.interface(BCoCustMemberInfo)" scaext:wsdlLocation="../Processes/com/fnf/eai/boa/hero/db/BOA_HERO_ONL_0004.bwp"/>
+    </sca:service>
+  </sca:component>
+</sca:composite>

@@ -1,0 +1,71 @@
+{
+  "swagger" : "2.0",
+  "info" : {
+    "version" : "1.0",
+    "title" : "BOA_HERO_ONL_0004",
+    "description" : "BOA_HERO_ONL_0004 service"
+  },
+  "host" : "localhost:8080",
+  "basePath" : "/",
+  "schemes" : [ "http" ],
+  "paths" : {
+    "/BCoCustMemberInfo" : {
+      "post" : {
+        "summary" : "postBOA_HERO_ONL_0004",
+        "description" : "postBOA_HERO_ONL_0004",
+        "operationId" : "post-BCoCustMemberInfo",
+        "consumes" : [ "application/json" ],
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "name" : "body",
+          "in" : "body",
+          "description" : "",
+          "schema" : {
+            "$ref" : "#/definitions/element"
+          },
+          "required" : true
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "a element to be returned",
+            "schema" : {
+              "$ref" : "#/definitions/element"
+            }
+          }
+        }
+      }
+    }
+  },
+  "definitions" : {
+    "REQUEST" : {
+      "type" : "object",
+      "required" : [ "V_PHONE_MOBILE", "V_EMAIL", "V_NAME", "V_ID", "V_CID" ],
+      "properties" : {
+        "V_ID" : {
+          "type" : "string"
+        },
+        "V_CID" : {
+          "type" : "string"
+        },
+        "V_NAME" : {
+          "type" : "string"
+        },
+        "V_PHONE_MOBILE" : {
+          "type" : "string"
+        },
+        "V_EMAIL" : {
+          "type" : "string"
+        }
+      }
+    },
+    "element" : {
+      "type" : "object",
+      "required" : [ "REQUEST" ],
+      "properties" : {
+        "REQUEST" : {
+          "$ref" : "#/definitions/REQUEST"
+        }
+      }
+    }
+  }
+}

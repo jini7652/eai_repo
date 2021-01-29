@@ -1,0 +1,4 @@
+description.buildorder=EAI_RestType1.application/EAI_RestType1/EAI_DBType1.application/EAI_DBType1/SharedModule
+description.defaultbuildorder=false
+eclipse.preferences.version=1
+version=1

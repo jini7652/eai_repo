@@ -1,0 +1,86 @@
+{
+  "swagger" : "2.0",
+  "info" : {
+    "version" : "1.0",
+    "title" : "POSP_HERO_ONL_0017",
+    "description" : "POSP_HERO_ONL_0017 service"
+  },
+  "host" : "localhost:8080",
+  "basePath" : "/",
+  "schemes" : [ "http" ],
+  "paths" : {
+    "/ZlistCoupon" : {
+      "post" : {
+        "summary" : "postPOSP_HERO_ONL_0017",
+        "description" : "postPOSP_HERO_ONL_0017",
+        "operationId" : "post-ZlistCoupon",
+        "consumes" : [ "application/json" ],
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "name" : "body",
+          "in" : "body",
+          "description" : "",
+          "schema" : {
+            "$ref" : "#/definitions/element"
+          },
+          "required" : true
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "a element to be returned",
+            "schema" : {
+              "$ref" : "#/definitions/element"
+            }
+          }
+        }
+      }
+    }
+  },
+  "definitions" : {
+    "REQUEST" : {
+      "type" : "object",
+      "required" : [ "V_TYPE", "V_BRAND", "V_SHOPCODE", "V_OPEN_DATE", "V_DUE_DATE", "V_DC_TYPE", "V_COUPON_DESC", "V_CID", "V_ISSUENO", "V_COUPON_TYPE" ],
+      "properties" : {
+        "V_TYPE" : {
+          "type" : "string"
+        },
+        "V_BRAND" : {
+          "type" : "string"
+        },
+        "V_CID" : {
+          "type" : "string"
+        },
+        "V_ISSUENO" : {
+          "type" : "string"
+        },
+        "V_SHOPCODE" : {
+          "type" : "string"
+        },
+        "V_COUPON_TYPE" : {
+          "type" : "string"
+        },
+        "V_DC_TYPE" : {
+          "type" : "string"
+        },
+        "V_COUPON_DESC" : {
+          "type" : "string"
+        },
+        "V_OPEN_DATE" : {
+          "type" : "string"
+        },
+        "V_DUE_DATE" : {
+          "type" : "string"
+        }
+      }
+    },
+    "element" : {
+      "type" : "object",
+      "required" : [ "REQUEST" ],
+      "properties" : {
+        "REQUEST" : {
+          "$ref" : "#/definitions/REQUEST"
+        }
+      }
+    }
+  }
+}

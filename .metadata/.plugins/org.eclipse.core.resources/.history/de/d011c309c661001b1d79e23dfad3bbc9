@@ -1,0 +1,74 @@
+{
+  "swagger" : "2.0",
+  "info" : {
+    "version" : "1.0",
+    "title" : "Resource",
+    "description" : "POSP_HERO_ONL_0005 service"
+  },
+  "host" : "localhost:8080",
+  "basePath" : "/",
+  "schemes" : [ "http" ],
+  "paths" : {
+    "/ZlistCustMember" : {
+      "post" : {
+        "summary" : "postPOSP_HERO_ONL_0005",
+        "description" : "Create a new item",
+        "operationId" : "createItem",
+        "consumes" : [ "application/json" ],
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "name" : "body",
+          "in" : "body",
+          "description" : "",
+          "schema" : {
+            "$ref" : "#/definitions/element"
+          },
+          "required" : true
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "a element to be returned",
+            "schema" : {
+              "$ref" : "#/definitions/element"
+            }
+          }
+        }
+      }
+    }
+  },
+  "definitions" : {
+    "REQUEST" : {
+      "type" : "object",
+      "required" : [ "V_TYPE", "V_BRAND", "V_MOBILE_R4", "V_MOBILE", "V_NAME", "V_CID" ],
+      "properties" : {
+        "V_TYPE" : {
+          "type" : "string"
+        },
+        "V_CID" : {
+          "type" : "string"
+        },
+        "V_BRAND" : {
+          "type" : "string"
+        },
+        "V_NAME" : {
+          "type" : "string"
+        },
+        "V_MOBILE_R4" : {
+          "type" : "string"
+        },
+        "V_MOBILE" : {
+          "type" : "string"
+        }
+      }
+    },
+    "element" : {
+      "type" : "object",
+      "required" : [ "REQUEST" ],
+      "properties" : {
+        "REQUEST" : {
+          "$ref" : "#/definitions/REQUEST"
+        }
+      }
+    }
+  }
+}

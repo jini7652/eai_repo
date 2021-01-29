@@ -1,0 +1,218 @@
+{
+  "swagger" : "2.0",
+  "info" : {
+    "version" : "1.0",
+    "title" : "Resource",
+    "description" : "POSP_HERO_ONL_0005 service"
+  },
+  "host" : "localhost:8080",
+  "basePath" : "/",
+  "schemes" : [ "http" ],
+  "paths" : {
+    "/MemberInformation" : {
+      "post" : {
+        "summary" : "postOBO_HERO_ONL_0004",
+        "description" : "Create a new item",
+        "operationId" : "createItem",
+        "consumes" : [ "application/json" ],
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "name" : "body",
+          "in" : "body",
+          "description" : "",
+          "schema" : {
+            "type" : "string"
+          },
+          "required" : true
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "a element to be returned",
+            "schema" : {
+              "$ref" : "#/definitions/element"
+            }
+          }
+        }
+      }
+    }
+  },
+  "definitions" : {
+    "RESPONSE_DATA" : {
+      "type" : "object",
+      "properties" : {
+        "opt_date" : {
+          "type" : "string"
+        },
+        "gender" : {
+          "type" : "string"
+        },
+        "recv_email" : {
+          "type" : "string"
+        },
+        "realname_yn" : {
+          "type" : "string"
+        },
+        "recv_phone" : {
+          "type" : "string"
+        },
+        "opt_from" : {
+          "type" : "string"
+        },
+        "ipin_di" : {
+          "type" : "string"
+        },
+        "offline_join_date" : {
+          "type" : "string"
+        },
+        "phone_home" : {
+          "type" : "string"
+        },
+        "emp_no" : {
+          "type" : "string"
+        },
+        "input_userid" : {
+          "type" : "string"
+        },
+        "last_login_ip" : {
+          "type" : "string"
+        },
+        "sleep_yn" : {
+          "type" : "string"
+        },
+        "join_from" : {
+          "type" : "string"
+        },
+        "auth_realname" : {
+          "type" : "string"
+        },
+        "id" : {
+          "type" : "string"
+        },
+        "input_date" : {
+          "type" : "string"
+        },
+        "email" : {
+          "type" : "string"
+        },
+        "remark_it" : {
+          "type" : "string"
+        },
+        "auth_type" : {
+          "type" : "string"
+        },
+        "birth_cal" : {
+          "type" : "string"
+        },
+        "phone_mobile" : {
+          "type" : "string"
+        },
+        "drop_date" : {
+          "type" : "string"
+        },
+        "family_list" : {
+          "type" : "array",
+          "items" : {
+            "$ref" : "#/definitions/family_list",
+            "uniqueItems" : false
+          }
+        },
+        "update_userid" : {
+          "type" : "string"
+        },
+        "address2" : {
+          "type" : "string"
+        },
+        "address1" : {
+          "type" : "string"
+        },
+        "join_date" : {
+          "type" : "string"
+        },
+        "last_login" : {
+          "type" : "string"
+        },
+        "member_grade_list" : {
+          "type" : "array",
+          "items" : {
+            "$ref" : "#/definitions/member_grade_list",
+            "uniqueItems" : false
+          }
+        },
+        "update_date" : {
+          "type" : "string"
+        },
+        "zipcode" : {
+          "type" : "string"
+        },
+        "birth_day" : {
+          "type" : "string"
+        },
+        "ipin_ci" : {
+          "type" : "string"
+        },
+        "address_road" : {
+          "type" : "string"
+        },
+        "passwd" : {
+          "type" : "string"
+        },
+        "recv_sms" : {
+          "type" : "string"
+        },
+        "name" : {
+          "type" : "string"
+        },
+        "recv_date" : {
+          "type" : "string"
+        },
+        "recv_post" : {
+          "type" : "string"
+        },
+        "cid" : {
+          "type" : "string"
+        },
+        "status" : {
+          "type" : "string"
+        }
+      }
+    },
+    "family_list" : {
+      "type" : "object",
+      "properties" : {
+        "FAMILY_BIRTH" : {
+          "type" : "string"
+        },
+        "FAMILY_NAME" : {
+          "type" : "string"
+        }
+      }
+    },
+    "member_grade_list" : {
+      "type" : "object",
+      "required" : [ "BRAND_DIV" ],
+      "properties" : {
+        "BRAND_DIV" : {
+          "type" : "string"
+        },
+        "MEMBER_GRADE" : {
+          "type" : "string"
+        }
+      }
+    },
+    "element" : {
+      "type" : "object",
+      "required" : [ "RESPONSE_MSG", "RESPONSE_CD" ],
+      "properties" : {
+        "RESPONSE_CD" : {
+          "type" : "integer"
+        },
+        "RESPONSE_DATA" : {
+          "$ref" : "#/definitions/RESPONSE_DATA"
+        },
+        "RESPONSE_MSG" : {
+          "type" : "string"
+        }
+      }
+    }
+  }
+}
